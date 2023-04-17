@@ -1,0 +1,105 @@
+
+.mat-icon {
+        vertical-align: middle;
+        margin-right:1 rem;
+        color: white;
+    }
+
+.logo {
+    text-align: center;
+    padding: 2.6rem 1rem;
+}
+
+.matdivider {
+    border-top-width: 2px;
+    border-color: white;
+}
+
+.mt-2{
+    color: white;
+    font-size:25px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family:cursive;
+    text-align: center;
+  }
+
+.mat-mdc-list-base{
+    --mdc-list-list-item-label-text-color:#efefef;
+    font-size: 18px;
+    margin-bottom: 4px;
+    height: 44px !important;
+
+  }
+
+.item-active{
+    background-color: white !important;
+    color: #0f0f0f !important;
+}
+
+
+body{
+   margin: 0;
+}
+
+.sidebar{
+   position: fixed;
+   width: 300px;
+   top:0;
+   left: 0;
+   bottom: 0;
+   background: #0f172a;
+   padding-top: 50px;
+}
+
+.matlistitem:hover {
+    background-color: rgb(166, 162, 162);
+}
+
+/* .sidebar h1{
+   display: block;
+   padding: 10px 20px;
+   color: #fff;
+   text-decoration: none;
+   font-family: "Rubik";
+   letter-spacing: 2px;
+   font-weight: 400;
+   margin: 0 0 50px 20px;
+   font-size: 25px;
+   text-transform: uppercase;
+} */
+
+/* .sidebar a{
+   display: block;
+   padding: 10px 20px;
+   font-family: "Rubik";
+   letter-spacing: 2px;
+   border-radius: 1em;
+   margin:10px 40px 10px 30px;
+} */
+/* a.nav-link.active{
+    margin-right: 40px;
+    color: white;
+    border-radius: 1em;
+    background-color: blue;
+} */
+/* a:hover{
+   margin-right: 40px;
+   color: white;
+   border-radius: 1em;
+   background-color: blue;
+} */
+
+/* a.nav-link{
+    color:white;
+} */
+
+/* .logout{
+   position: absolute;
+   bottom: 50px;
+   width: 100%;
+} */
+/* .img{
+   height: 200px;
+   margin-left: 20px;
+} */

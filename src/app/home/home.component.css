@@ -1,0 +1,32 @@
+/* mat-toolbar{
+    background: black;
+    color: white;
+} */
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  mat-drawer {
+    width: 280px;
+    background:#0f172a;
+    position: fixed;
+    /* height: 100%; */
+  }
+  /* mat-drawer-container {
+    height: 100%;
+  } */
+  /* .main{
+    margin-top: 60px;
+    margin-left: 280px;
+  } */
+
+  .main{
+    background-color: white;
+    /* position:absolute; */
+    margin: 5px;
+    margin-left: 300px;
+    border-radius: 0.8em;
+
+}

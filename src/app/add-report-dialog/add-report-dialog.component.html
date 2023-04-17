@@ -1,0 +1,69 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 offset-md-3"></div>
+           
+            <h1 class="text-center ">Update the Salary Report</h1>
+           
+            <!-- <h1 class="text-center ">Add a new Employee</h1> -->
+            
+
+            <form style="margin-top: 25px;" (ngSubmit)="!updatesalary.invalid && onsubmit()" #updatesalary="ngForm">
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Employee ID</mat-label>
+                    <input matInput placeholder="Enter employee id" type="text" id="id"  name="id" [(ngModel)]="salary.id" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Enter name" type="text" id="name"  name="name" [(ngModel)]="salary.name" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>HRA</mat-label>
+                    <input matInput placeholder="Enter house rent allowance" type="text" id="hra"  name="hra" [(ngModel)]="salary.hra" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>TA</mat-label>
+                    <input matInput placeholder="Enter travel allowance" type="text" id="ta"  name="ta" [(ngModel)]="salary.ta" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>No of Days Present</mat-label>
+                    <input matInput placeholder="Enter total no of days present" type="text" id="psdays"  name="psdays" [(ngModel)]="salary.psdays" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Salary per Day</mat-label>
+                    <input matInput placeholder="Enter one day salary amount" type="text" id="amtperday"  name="amtperday" [(ngModel)]="salary.amtperday" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+
+                 
+
+                  <div class="container text-center btn-width">
+                    <button mat-raised-button color="primary" style="width: 100px; height: 40px; background-color:#0f172a" class="btn btn-success"  type="submit" >Update</button>
+
+                  </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+

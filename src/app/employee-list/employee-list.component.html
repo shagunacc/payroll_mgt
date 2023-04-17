@@ -1,0 +1,41 @@
+<!-- <p>employee-list works!</p> -->
+<h1 style="margin-left: 50px; margin-top: 50px; text-decoration: underline;">List of Employees :</h1>
+
+<div class="table-set">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>E.Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.department}}</td>
+                <td>{{employee.contact}}</td>
+                <td>{{employee.email}}</td>
+                <td>
+                  
+                    <button mat-raised-button color="primary" (click)="updateEmployee(employee.id)">Update</button>
+                    <button mat-raised-button color="warn" (click)="deleteEmployee(employee.id)" style="margin-left: 10px;">Delete</button>
+
+                  
+                  
+                    <!-- (click)="updateEmployee(employee.id) -->
+
+                </td>
+                
+                <!-- <td><button class="btn btn-info">Update</button></td> -->
+                <!-- (click)="updateEmployee(employee.id) -->
+    
+            </tr>
+        </tbody>
+      </table>
+
+</div>

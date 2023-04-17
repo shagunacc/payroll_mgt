@@ -1,0 +1,45 @@
+<!-- <p>salary-reports works!</p> -->
+<h1 style="margin-left: 50px; margin-top: 50px; text-decoration: underline;">Salary Reports :</h1>
+
+<div class="table-set">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th class="th-class">E.Id</th>
+            <th class="th-class">Name</th>
+            <th class="th-class">HRA</th>
+            <th class="th-class">TA</th>
+            <th class="th-class">Present Days</th>
+            <th class="th-class">Amount/Day</th>
+            <th class="th-class">Total Salary</th>
+            <th class="th-class">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let supplier of suppliers">
+                <td>{{supplier.id}}</td>
+                <td>{{supplier.name}}</td>
+                <td>{{supplier.hra}}</td>
+                <td>{{supplier.ta}}</td>
+                <td>{{supplier.psdays}}</td>
+                <td>{{supplier.amtperday}}</td>
+                <td>{{supplier.tsalary}}</td>
+                <td>
+                  
+                    <button mat-raised-button color="primary" (click)="updateReport(supplier.id)">Update</button>
+                    <button mat-raised-button color="warn" (click)="deleteReport(supplier.id)" style="margin-left: 10px
+                    ;">Delete</button>
+
+                  
+                </td>
+                <!-- <td><button mat-raised-button color="primary">Update</button></td> -->
+
+                
+
+            </tr>
+        </tbody>
+        
+      </table>
+
+</div>
+

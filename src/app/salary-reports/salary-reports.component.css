@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+  .table{
+    --bs-table-hover-bg:#ebf5fa;
+
+  }
+  .table-set{
+    padding: 50px;
+    padding-top: 50px;
+  
+  }
+
+  .th-class {
+    width: 6% !important;
+  }

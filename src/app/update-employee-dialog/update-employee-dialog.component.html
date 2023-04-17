@@ -1,0 +1,58 @@
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 offset-md-3"></div>
+           
+            <h1 class="text-center ">Update the Employee</h1>
+
+            <form style="margin-top: 25px;" (ngSubmit)="!updateform.invalid && onsubmit()" #updateform="ngForm">
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Employee ID</mat-label>
+                    <input matInput placeholder="Enter employee id"  type="text" id="id"  name="id" [(ngModel)]="employee.id" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Enter name"  type="text" id="name"  name="name" [(ngModel)]="employee.name" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Department</mat-label>
+                    <input matInput placeholder="Enter department"  type="text" id="department"  name="department" [(ngModel)]="employee.department" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Contact No</mat-label>
+                    <input matInput placeholder="Enter contact no"  type="text" id="contact"  name="contact" [(ngModel)]="employee.contact" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+                  <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Enter email-id" type="text" id="email"  name="email" [(ngModel)]="employee.email" required="required">
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <br>
+                  <br>
+
+                 
+
+                  <div class="container text-center btn-width">
+                    <button mat-raised-button color="primary" style="width: 100px; height: 40px; background-color:#0f172a" class="btn btn-success"  type="submit">Update</button>
+
+                  </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

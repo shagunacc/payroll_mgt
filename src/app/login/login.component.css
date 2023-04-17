@@ -1,0 +1,18 @@
+.full-width{
+    width: 100%;
+}
+.login-card{
+    
+    display: inline-block;
+}
+.card-cover{
+    width: 100%;
+    
+    text-align: center;
+    margin-top: 40px;
+    /* margin-bottom: 0px; */
+}
+/* .mat-success{
+    background-color: black;
+    color: white;
+} */
