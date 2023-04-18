@@ -1,0 +1,63 @@
+<!-- <p>monthly-reports works!</p> -->
+<span style="margin-left: 200px; font-style: italic; font-size: 20px;"><b>Search Salary Reports of a particular month :</b></span>
+<mat-form-field appearance="fill" style="margin-top: 20px; margin-left: 100px;">
+    <mat-label>Select</mat-label>
+    <mat-select [(ngModel)]="selected_month">
+      <mat-option value="January" >January</mat-option>
+      <mat-option value="February">February</mat-option>
+      <mat-option value="March">March</mat-option>
+      <mat-option value="April">April</mat-option>
+      <mat-option value="May">May</mat-option>
+      <mat-option value="June">June</mat-option>
+      <mat-option value="July">July</mat-option>
+      <mat-option value="August">August</mat-option>
+      <mat-option value="September">September</mat-option>
+      <mat-option value="October">October</mat-option>
+      <mat-option value="November">November</mat-option>
+      <mat-option value="December">December</mat-option>
+      
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button (click)="show()" style="margin-left: 30px; background-color: #242e46;" color="primary">Search</button>
+
+
+
+<h1 style="margin-left: 50px; margin-top: 50px; text-decoration: underline;">Monthly Salary Reports :</h1>
+
+<div class="table-set">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Employee Id</th>
+            <th>Month</th>
+            <th>Total Salary</th>
+            <!-- <th>Contact</th> -->
+            <!-- <th>Email</th> -->
+            <!-- <th>Actions</th> -->
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let mreport of reports">
+                <td>{{mreport.id}}</td>
+                <td>{{mreport.month}}</td>
+                <td>{{mreport.tsalary}}</td>
+                <td>
+                  
+                    <button mat-raised-button color="primary" >Update</button>
+                    <button mat-raised-button color="warn" style="margin-left: 10px;">Delete</button>
+
+                  
+                  
+                    <!-- (click)="updateEmployee(employee.id) -->
+
+                </td>
+                
+                <!-- <td><button class="btn btn-info">Update</button></td> -->
+                <!-- (click)="updateEmployee(employee.id) -->
+    
+            </tr>
+        </tbody>
+      </table>
+
+</div>
+

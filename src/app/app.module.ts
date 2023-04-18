@@ -28,7 +28,8 @@ import{MatSelectModule} from '@angular/material/select';
 import { UpdateEmployeeDialogComponent } from './update-employee-dialog/update-employee-dialog.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
-import { NewcComponent } from './newc/newc.component';
+import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
+import { SelectedReportComponent } from './selected-report/selected-report.component';
 
 
 
@@ -48,7 +49,8 @@ import { NewcComponent } from './newc/newc.component';
     UpdateEmployeeDialogComponent,
     DashboardComponent,
     ErrorComponent,
-    NewcComponent
+    MonthlyReportsComponent,
+    SelectedReportComponent
   ],
   imports: [
     BrowserModule,

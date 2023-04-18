@@ -1,0 +1,29 @@
+<p>selected-report works!</p>
+<h1 style="margin-left: 50px; margin-top: 50px; margin-bottom: 50px; text-decoration: underline;">Reports of the month {{this.selected_month}}:</h1>
+
+<div class="table-set">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Emp.Id</th>
+            <th>Month</th>
+            <th>T.Salary</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sreport of reports">
+                <td>{{sreport.id}}</td>
+                <td>{{sreport.month}}</td>
+                <td>{{sreport.tsalary}}</td>
+                
+                <!-- <td><button class="btn btn-info">Update</button></td> -->
+                <!-- (click)="updateEmployee(employee.id) -->
+    
+            </tr>
+        </tbody>
+      </table>
+
+</div>
+
+

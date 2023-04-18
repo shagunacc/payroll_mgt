@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeaveRecordsComponent } from './leave-records.component';
+import { MonthlyReportsComponent } from './monthly-reports.component';
 
-describe('LeaveRecordsComponent', () => {
-  let component: LeaveRecordsComponent;
-  let fixture: ComponentFixture<LeaveRecordsComponent>;
+describe('MonthlyReportsComponent', () => {
+  let component: MonthlyReportsComponent;
+  let fixture: ComponentFixture<MonthlyReportsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LeaveRecordsComponent ]
+      declarations: [ MonthlyReportsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LeaveRecordsComponent);
+    fixture = TestBed.createComponent(MonthlyReportsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

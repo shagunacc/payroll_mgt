@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewcComponent } from './newc.component';
+import { SelectedReportComponent } from './selected-report.component';
 
-describe('NewcComponent', () => {
-  let component: NewcComponent;
-  let fixture: ComponentFixture<NewcComponent>;
+describe('SelectedReportComponent', () => {
+  let component: SelectedReportComponent;
+  let fixture: ComponentFixture<SelectedReportComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NewcComponent ]
+      declarations: [ SelectedReportComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NewcComponent);
+    fixture = TestBed.createComponent(SelectedReportComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

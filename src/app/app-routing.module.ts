@@ -7,10 +7,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
-import { LeaveRecordsComponent } from './leave/leave-records/leave-records.component';
+// import { LeaveRecordsComponent } from './leave/leave-records/leave-records.component';
 import { LoginComponent } from './login/login.component';
+import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
 import { RouteGuardService } from './route-guard.service';
 import { SalaryReportsComponent } from './salary-reports/salary-reports.component';
+import { SelectedReportComponent } from './selected-report/selected-report.component';
 import { UpdateEmployeeDialogComponent } from './update-employee-dialog/update-employee-dialog.component';
 
 const routes: Routes = [
@@ -25,7 +27,8 @@ const routes: Routes = [
       { path: 'add-report', component: AddReportComponent },
       {path:'update-employee/:id', component:UpdateEmployeeDialogComponent},
       {path:'update-report/:id',component:AddReportDialogComponent},
-      {path:'leave-records',component:LeaveRecordsComponent}
+      {path:'monthly-reports',component:MonthlyReportsComponent},
+      {path:'selected-reports/:month',component:SelectedReportComponent}
     ]
   },
   {path:'**',component:ErrorComponent}
